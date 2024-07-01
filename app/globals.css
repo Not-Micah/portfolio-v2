@@ -1,33 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .slide-hover {
+    @apply relative overflow-hidden bg-white text-red-300 
+    transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 
+    before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-[1500ms]
+   hover:bg-red-300 hover:text-white hover:before:-translate-x-40
+    duration-200
   }
+
+  .list {
+    @apply list-disc marker:text-gray-300 ml-4 my-4
+    w-full text-gray-600
+    flex flex-col justify-start items-start gap-y-1;
+  }
+
+  .left-aligned-flex {
+    @apply p-4 flex flex-col justify-center items-start
+  }
+
+  .dynamic-heading {
+    @apply text-7xl max-lg:text-6xl max-md:text-5xl
+  }
+
+  .dynamic-subheading {
+    @apply text-2xl max-md:text-xl
+  }
+
+  .dynamic-text {
+    @apply text-lg max-md:text-base
+  }
+
+  .dynamic-label {
+    @apply text-base max-md:text-sm
+  }
+
+  .auto-margins {
+    @apply mx-auto
+    w-[calc(100%-24rem)]
+    max-lg:w-[calc(100%-16rem)]
+    max-md:w-[calc(100%-8rem)]
+    max-sm:w-[calc(100%-4rem)]
+  }
+}
+
+.clipped-div {
+  clip-path: polygon(0 12%, 100% 0, 100% 88%, 0% 100%);
 }
