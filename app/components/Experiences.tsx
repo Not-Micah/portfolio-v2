@@ -33,7 +33,7 @@ const Experiences = () => {
           <div className="flex-col justify-start items-start gap-y-2 max-w-[60%] max-lg:max-w-[100%]">
             <h3 className="text-xl font-semibold text-red-300">{activeExperience?.label}</h3>
             <p className="text-sm text-gray-300">{activeExperience?.date}</p>
-            <p className="w-full">{activeExperience?.display}</p>
+            <div className="w-full">{activeExperience?.display}</div>
           </div>
       </div>
 
