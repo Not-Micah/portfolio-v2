@@ -12,7 +12,7 @@ export const experiences = [
     date: "August 2022 - December 2022",
     display: (
       <ul className="list">
-        <li className="list-item">Although quite unconventional, I decided to learn game development through the <span className="underline">Python</span> library <span className="underline">"Pygame"</span>.</li>
+        <li className="list-item">Although quite unconventional, I decided to learn game development through the <span className="underline">Python</span> library <span className="underline">&quot;Pygame&quot;</span>.</li>
         <li className="list-item">In late November 2023, I published a game on itch.io called <a href="" className="underline">The Impossible Platformer</a>.</li>
         <li className="list-item">Through Pygame I grew my programming logic extensively. Additionally, I explored Gidot for roughly a month before deciding to quit game development.</li>
       </ul>
@@ -24,8 +24,8 @@ export const experiences = [
     date: "December 2022 - August 2023",
     display: (
       <ul className="list">
-        <li className="list-item">Again, I took a rather unconventional approach to app development through <span className="underline">Python's Kivy/KivyMD library</span>.</li>
-        <li className="list-item">Over the course of summer, I developed and published four mobile apps on the Google Play Store called the <a href="" className="underline">"Simple Work Series"</a>.</li>
+        <li className="list-item">Again, I took a rather unconventional approach to app development through <span className="underline">Python&apos;s Kivy/KivyMD library</span>.</li>
+        <li className="list-item">Over the course of summer, I developed and published four mobile apps on the Google Play Store called the <a href="" className="underline">&quot;Simple Work Series&quot;</a>.</li>
         <li className="list-item">This was my first delve into the concept of front-end and back-end development. In addition, I learnt quite a bit on debugging with Android Studio and packaging applications with Buildozer.</li>
         <li className="list-item">After some time of using Kivy, I switched to <span className="underline">Kotlin</span> and gained some basic usage with the language.</li>
       </ul>
@@ -37,7 +37,7 @@ export const experiences = [
     date: "November 2023 - Current",
     display: (
       <ul className="list">
-        <li className="list-item">Web development is by far where I'm most passionate in.</li>
+        <li className="list-item">Web development is by far where I&apos;m most passionate in.</li>
         <li className="list-item">Currently, I work with the technologies: <span className="underline">React, Tailwind, NextJS and Firebase</span> with a preference for <span className="underline">TypeScript</span> over JavaScript.</li>
         <li className="list-item">Despite the short time in web development, I have published a number of websites such as <span className="underline">Verbum, Versle and Me2</span>, which can you see below.</li>
         <li className="list-item">I plan to further develop my skills in web development and pursue it in the near future.</li>
