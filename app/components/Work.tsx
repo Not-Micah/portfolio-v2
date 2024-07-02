@@ -9,7 +9,7 @@ const Work = () => {
         <Title>
           My Work
         </Title>
-        <p className="text-gray-500 font-nerd dynamic-label">Here's a showcase of a small selection of my work!</p>
+        <p className="text-gray-500 font-nerd dynamic-label">Here&apos;s a showcase of a small selection of my work!</p>
       </div>
 
       <div className="flex flex-col gap-y-20 w-full max-[850px]:gap-y-14">
