@@ -17,8 +17,8 @@ const Nav = () => {
         max-md:hidden'>
             <div className="flex flex-row justify-center items-center gap-x-6
             border-2 border-gray-300 rounded-md px-3 py-2">
-            {navLinks.map((link) => (
-                <a href={link.link} className="">
+            {navLinks.map((link, index) => (
+                <a key={index} href={link.link} className="">
                     {link.label}
                 </a>
             ))}

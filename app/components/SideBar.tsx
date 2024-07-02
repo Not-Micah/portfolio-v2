@@ -20,8 +20,8 @@ const SideBar = () => {
         <IoClose size={25} />
       </button>
       <h3 className='text-lg font-semibold mb-2'>micah.dev</h3>
-      {navLinks.map((link) => (
-                <a href={link.link}>
+      {navLinks.map((link, index) => (
+                <a key={index} href={link.link}>
                     {link.label}
                 </a>
             ))}

@@ -6,9 +6,11 @@ import Work from "./components/Work";
 import Statistics from "./components/Statistics";
 import Contact from "./components/Contact";
 
+import Gradient from "./components/Gradient";
+
 const Home = () => {
   return (
-    <main>
+    <Gradient>
       <div className="max-[350px]:hidden">
         <Nav />
         <div
@@ -25,7 +27,7 @@ const Home = () => {
       <div className="hidden max-[350px]:inline">
         <p className="m-2">Oops! Please revisit this site on a larger device...</p>
       </div>
-    </main>
+    </Gradient>
   );
 };
 

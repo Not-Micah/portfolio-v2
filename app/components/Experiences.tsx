@@ -20,8 +20,9 @@ const Experiences = () => {
       max-lg:flex-col">
         <div className="flex flex-col justify-start items-start
         max-lg:flex-row max-lg:gap-x-4 max-lg:max-w-[100%] max-lg:overflow-y-scroll max-lg:mb-12">
-            {experiences.map((experience) => (
+            {experiences.map((experience, index) => (
               <div
+              key={index}
               onClick={() => setActiveState(experience.key)}
               className={`border-l-2 border-gray-300 cursor-pointer font-nerd
               transition-all duration-500 whitespace-nowrap

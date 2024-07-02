@@ -14,7 +14,9 @@ const Work = () => {
 
       <div className="flex flex-col gap-y-20 w-full max-[850px]:gap-y-14">
         {workProjects.map((project, index) => (
-          <div className="w-full h-[300px] max-xl:h-[250px] max-[850px]:h-[350px] relative">
+          <div 
+          key={index}
+          className="w-full h-[300px] max-xl:h-[250px] max-[850px]:h-[350px] relative">
             <img src={project.imgPath} alt="" className={`h-full object-cover rounded-lg shadow-lg
             absolute top-0
             max-[850px]:top-1/2 max-[850px]:left-1/2 max-[850px]:transform max-[850px]:-translate-x-1/2 max-[850px]:-translate-y-1/2
@@ -44,8 +46,10 @@ const Work = () => {
               <div className={`flex gap-x-4 w-full flex-wrap
                 ${index % 2 === 0 ? "justify-end" : "justify-start"}
                 max-[850px]:justify-start`}>
-                {project.techs.map((tech) => (
-                  <p className="font-nerd text-sm
+                {project.techs.map((tech, index) => (
+                  <p 
+                  key={index}
+                  className="font-nerd text-sm
                   max-[850px]:text-red-300">
                     {tech}
                   </p>

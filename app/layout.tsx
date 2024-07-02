@@ -8,7 +8,7 @@ import SocialBar from "./components/SocialBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Micah Dev",
+  title: "micah.dev",
   description: "Hi! I'm Micah! A 17 year old interested in web-development. Come checkout some of my skills and projects.",
 };
 
