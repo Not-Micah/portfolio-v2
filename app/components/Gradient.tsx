@@ -1,12 +1,13 @@
-import React from "react"
+import { twMerge } from "tailwind-merge";
 
 interface GradientProps {
     children: React.ReactNode;
+    className?: string;
 }
 
-const Gradient: React.FC<GradientProps> = ({ children }) => {
+const Gradient: React.FC<GradientProps> = ({ children, className }) => {
   return (
-    <div className="relative overflow-x-hidden">
+    <div className={twMerge("relative overflow-x-hidden", className)}>
         <div className="z-10">
             {children}
         </div>

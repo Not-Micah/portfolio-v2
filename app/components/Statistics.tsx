@@ -3,8 +3,10 @@ import { statistics } from "../data";
 
 const Statistics = () => {
   return (
-    <div className="mb-12 mt-64
-    bg-gray-100 w-[100vw] clipped-div">
+    <div 
+    id="impact"
+    className="mb-12 mt-64
+    bg-red-300/20 w-[100vw] clipped-div">
       <div className="auto-margins
       flex flex-col gap-y-4 py-28">
         <Title>

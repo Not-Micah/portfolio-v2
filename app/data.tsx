@@ -2,7 +2,7 @@ export const navLinks = [
     { label: "About", link: "#about" },
     { label: "Experience", link: "#experience" },
     { label: "Work", link: "#work" },
-    { label: "Contact", link: "#contact" }
+    { label: "Impact", link: "#impact" }
 ]
 
 export const experiences = [
@@ -82,10 +82,7 @@ export const statistics = [
     <div className="flex flex-col gap-y-2">
       <p className="text-lg font-medium">Peaking in <span className="underline">July 2024</span> with</p>
       <span
-          className="bg-clip-text text-transparent text-5xl font-extrabold font-nerd"
-          style={{
-            backgroundImage: 'linear-gradient(90deg, #f56565, #feb2b2)',
-          }}
+          className="text-red-300 text-5xl font-extrabold"
         >
           140,000+
         </span>
@@ -96,10 +93,7 @@ export const statistics = [
     <div className="flex flex-col gap-y-2">
       <p className="text-lg font-medium">Accumulating over</p>
       <span
-          className="bg-clip-text text-transparent text-5xl font-extrabold font-nerd"
-          style={{
-            backgroundImage: 'linear-gradient(90deg, #f56565, #feb2b2)',
-          }}
+          className="text-red-300 text-5xl font-extrabold"
         >
           1,000,000+
         </span>

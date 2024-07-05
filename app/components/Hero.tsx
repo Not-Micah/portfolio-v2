@@ -2,7 +2,9 @@ import React from 'react'
 
 const Hero = () => {
   return (
-      <section className="my-28 w-full
+      <section 
+      id='about'
+      className="my-28 w-full
       flex flex-col justify-start items-start gap-y-2">
         <div className="w-full flex 
         max-lg:justify-center">

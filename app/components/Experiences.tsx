@@ -10,7 +10,9 @@ const Experiences = () => {
   const activeExperience = experiences.find(exp => exp.key === activeState);
 
   return (
-    <div className='w-full my-40 min-h-[400px]
+    <div
+    id="experience"
+    className='w-full my-40 min-h-[400px]
     flex flex-col justify-start items-start gap-y-6'>
       <Title>
         My Experience

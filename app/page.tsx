@@ -10,7 +10,7 @@ import Gradient from "./components/Gradient";
 
 const Home = () => {
   return (
-    <Gradient>
+    <Gradient className="scroll-smooth">
       <div className="max-[350px]:hidden">
         <Nav />
         <div

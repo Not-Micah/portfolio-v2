@@ -4,8 +4,11 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import useSideBar from "@/hooks/useSideBar";
 import { navLinks } from "../data";
 
+import { useState } from "react";
+
 const Nav = () => {
   const {onOpen} = useSideBar();
+  const [activeSection, setActiveSection] = useState("About");
  
   return (
     <nav className='w-full
@@ -18,7 +21,12 @@ const Nav = () => {
             <div className="flex flex-row justify-center items-center gap-x-6
             border-2 border-gray-300 rounded-md px-3 py-2">
             {navLinks.map((link, index) => (
-                <a key={index} href={link.link} className="">
+                <a 
+                key={index} 
+                href={link.link}
+                onClick={() => setActiveSection(link.label)}
+                className={`${activeSection === link.label ? "text-red-300" : ""}
+                transition transition-all duration-300`}>
                     {link.label}
                 </a>
             ))}
