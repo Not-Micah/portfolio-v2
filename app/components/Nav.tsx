@@ -18,23 +18,11 @@ const Nav = () => {
         max-md:hidden'>micah.dev</h3>
         <div className='flex flex-row justify-center items-center gap-x-6
         max-md:hidden'>
-            <div className="flex flex-row justify-center items-center gap-x-6
-            border-2 border-gray-300/30 rounded-md px-3 py-2">
-            {navLinks.map((link, index) => (
-                <a 
-                key={index} 
-                href={link.link}
-                onClick={() => setActiveSection(link.label)}
-                className={`${activeSection === link.label ? "text-red-300" : ""}
-                transition-all duration-300`}>
-                    {link.label}
-                </a>
-            ))}
-            </div>
             <a className='px-3 py-2
             border-2 border-gray-300/30 rounded-md
-            hover:border-red-300
-            slide-hover' href="">
+            hover:border-primary
+            slide-hover' href="
+            https://docs.google.com/document/d/1djJMaQ1ozb6BE_kZVZgtdDENPLIisFRN/edit?usp=sharing&ouid=101036441845072148332&rtpof=true&sd=true">
                 <span className='relative z-10'>Resume</span>
             </a>
         </div>

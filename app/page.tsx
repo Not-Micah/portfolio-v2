@@ -8,13 +8,16 @@ import Contact from "./components/Contact";
 
 import Gradient from "./components/Gradient";
 
+// Some brute forcing for max with in page.tsx and Statistics.tsx
+// max-w-[1500px]
+
 const Home = () => {
   return (
     <Gradient className="scroll-smooth">
       <div className="max-[350px]:hidden">
         <Nav />
         <div
-          className="auto-margins"
+          className="auto-margins max-w-[1500px]"
         >
           <Hero />
           <Skills />
@@ -25,7 +28,7 @@ const Home = () => {
         <Contact />
       </div>
       <div className="hidden max-[350px]:inline">
-        <p className="m-2">Oops! Please revisit this site on a larger device...</p>
+        <p className="p-2 bg-white">Oops! Please revisit this site on a larger device...</p>
       </div>
     </Gradient>
   );

@@ -9,10 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        nerd: ['"Fira Code Nerd Font"', 'monospace'], // Add your custom font
+        nerd: ['"Fira Code Nerd Font"', 'monospace'],
+      },
+      colors: {
+        primary: '#9A9498', 
       },
     },
   },
   plugins: [],
 };
+
 export default config;

@@ -6,9 +6,10 @@ const Statistics = () => {
     <div 
     id="impact"
     className="mb-12 mt-64
-    bg-red-300/10 w-[100vw] clipped-div">
+    bg-primary/10 w-[100vw] clipped-div">
       <div className="auto-margins
-      flex flex-col gap-y-4 py-28">
+      flex flex-col gap-y-4 py-28
+      max-w-[1500px]">
         <Title>
           My Impact
         </Title>
