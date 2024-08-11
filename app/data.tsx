@@ -49,14 +49,14 @@ export const experiences = [
 export const workProjects = [
   {
     label: "Verbum",
-    description: "A web app with a database of 300+ verses, allowing users to filter verses based on different criteria such as topics and authors. Includes an AI chat bot using the Gemini API.",
+    description: "A web app with a database of 300+ verses, allowing users to filter verses based on different criteria such as topics.",
     techs: ["React", "NextJS", "Tailwind CSS", "Mongo"],
     imgPath: "/verbum.png",
     link: "https://verbum-beta.vercel.app"
   },
   {
     label: "Versle",
-    description: "A simple Wordle-style game, but instead of guessing the daily word, you guess the bible book which the daily verse comes from! Currently over 90,000+ plays.",
+    description: "A simple Wordle-style game, but instead of guessing the daily word, you guess the bible book which the daily verse comes from!",
     techs: ["React", "NextJS", "Tailwind CSS", "Mongo"],
     imgPath: "/versle.png",
     link: "https://versle.vercel.app"
@@ -70,7 +70,7 @@ export const workProjects = [
   },
   {
     label: "Me2",
-    description: "Social media app for students; algorithm based filtering allows students with similar interests to chat and share socials. Currently in beta testing.",
+    description: "Social media app for students; algorithm based filtering allows students with similar interests to chat and share socials.",
     techs: ["React", "NextJS", "Tailwind CSS", "Firebase"],
     imgPath: "/me2.png",
     link: "https://me2-beta.vercel.app"
